@@ -45,6 +45,7 @@ Route::get('ListeResultats','noteController@ViewSearch')->middleware('auth');
 Route::post('generateFichePresencePdf','etudiantController@fpPdf')->name('extract.generateFichePresencePdf');
 Route::get('zffi','etudiantController@viexExtractFiche');
 Route::get('ListeNoteSaisi','noteController@ListeDesNotes')->middleware('auth');
+Route::get('ListeNoteSaisi2','noteController@ListeDesNotes')->middleware('auth');
 
 Route::post('ExportPDFResultat','noteController@Res')->name('ExportPDFResultat')->middleware('auth');;
 Route::post('ExportPDFResultatGlobal','noteController@ExportPDFResultat')->name('ExportPDFResultatGlobal')->middleware('auth');
