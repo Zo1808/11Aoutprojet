@@ -34,7 +34,7 @@
 
     .verso {
       padding: 10px;
-       width: 5px;
+       width: 1px;
       border: 1px solid black;
       border-collapse: collapse;
     
@@ -49,11 +49,11 @@
       
       }
       .versobottom{
-      	 padding: 20px;
-       width: 520px;
+      	 padding: -10px;
+       width: 20px;
       border: 1px solid black;
       border-collapse: collapse;
-       margin-bottom: : 130px;
+       margin-bottom: : 20px;
       }
 
       .tourne {
@@ -3655,70 +3655,66 @@ ul.chat-available-user li a:hover {
         <center>    	<br><br><br>
         <div class="card11" >
 
-        <frameset rows="50%,50%">
+        <frameset rows="20%,20%">
 
 
 				  <frame >
 				  	<table>
 				  		 
-                  	 <td>  <div style="top-bar-title padding-bottom margin-left:-900px;margin-top:6px;"><img src="{{$UM}}" height="80px;"width="80;"alt="logo"></img>
+                  	 <td>  <div style="top-bar-title padding-bottom margin-left:-900px;margin-top:6px;"><img src="{{$UM}}" height="30px;"width="30;"alt="logo"></img>
 					</td>
                   	 <td style="margin-right:"113px;">
-<b>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbspREPOBLIKAN'I MADAGASIKARA<br>
-&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspFitiavana-Tanindrazana-Fandrosoana</b><br><br>
-                  	 	&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp UNIVERSITE D'ANTANANARIVO <br/>&nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbspINSTITUT D'ENSEIGNEMENT SUPERIEUR<br>
-					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp DE SOAVINANDRIANA ITASY</td>
+<b><h5>&nbsp &nbsp REPOBLIKAN'I MADAGASIKARA</h5><h6>
+&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbspFitiavana-Tanindrazana-Fandrosoana</h6></b>
+                  	 	<h6>&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp &nbsp UNIVERSITE D'ANTANANARIVO <br/>&nbsp&nbsp &nbsp &nbsp &nbsp &nbspINSTITUT D'ENSEIGNEMENT SUPERIEUR<br>
+					&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp DE SOAVINANDRIANA ITASY</h6></td>
 
 
 
-                  	 <td> <div style="top-bar-title"><img src="{{$IESSI}}"" style="margin-top:6px;margin-left:50px;" height="80px;"width=""alt="logo"></img></div></td>
+                  	 <td> <div style="top-bar-title"><img src="{{$IESSI}}"" style="margin-top:6px;margin-left:3px;" height="30px;"width=""alt="logo"></img></div></td>
                   	 <tr>   	
                   	</table>
 					
                   	 	
 				  </frame>	
-				    <div class="row" align="justify">
-                  		<p>Numero Inscription  :  <b>{{$etudiant->numero_immatricule}}</b></p>
-             			<p>Nom : {{$etudiant->nom}}</p>
-                  		<p>Prénom(s) :  {{$etudiant->prenom}} </p>
-                  		<p>Parcours :  {{App\Filieres::find($etudiant->filiere_id)->nom}}  &nbsp &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp Niveau : {{App\Classes::find($etudiant->classe_id)->nom_classe}} </p>
-    				    <p> &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp  &nbsp &nbsp <img src="{{$photoEtudiant}}" class="pull-right" width="100px;"height="100px;"/></p>
+				    <div  align="justify">
+                  		<h6>Numéro Inscription  :  <b>{{$etudiant->numero_immatricule}}</b>&nbsp  &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp &nbsp Niveau : {{App\Classes::find($etudiant->classe_id)->nom_classe}} <br/>
+             			    Nom : {{$etudiant->nom}}<br/>
+                  		Prénom(s) :  {{$etudiant->prenom}} </p>
+                  		Parcours :  {{App\Filieres::find($etudiant->filiere_id)->nom}} <br/></h6>
+    				    <img src="{{$photoEtudiant}}"  width="40px;"height="40px;" style="margin-left:330px;margin-top: -40px;"/><br/>
                   		
                   	 </div>
                   	 <table>
  					<tr>
 
-                  	<td>QR code <br><br>
-
-						<img src="{{$qrcodess}}" width="80px;"/>
-                  	</td>
+                 <td style="margin-top:-8px;">QR code <br><br><img src="{{$qrcodess}}" width="40px;"/></td>
 
 
-                  	<td>&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp <br/>&nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp <p class="pull-right" style="margin-right: -35px;margin-top:-8px"> Directeur</p>  &nbsp   &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img src="{{$sonia}}" width="90px;"style="margin-left: 85px;margin-top:10px;"/>
+                  	<td>&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp <br/>&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  <p class="pull-right" style="margin-right: 2px;margin-top:-12px"> Directeur</p>  &nbsp   &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  <img src="{{$sonia}}" width="60px;"style="margin-left: 55px;margin-top:10px;"/>
                   	</td>
                   	
-                  	<td > &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp&nbsp&nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp&nbsp  &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp   &nbsp  &nbsp   &nbsp  &nbsp <p class="pull-right" style="margin-right: -5px;margin-top:-8px">Signature</p>
+                  	<td > &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp  &nbsp  &nbsp  &nbsp  &nbsp  &nbsp &nbsp&nbsp  &nbsp  &nbsp&nbsp  &nbsp  &nbsp<p class="pull-right" style="margin-right: 15px;margin-top:-12px">Signature</p>
 
                   	</td>
-                  	
+
                   </tr>
                   </table>
-				--------------------------------------------------------------------------------------------------------------------------------
-				<br/></br>
+				<br/><br/>
 				  <frame>
 						<table>
 							 <tr>
-                  	 		 <td colspan="2" class="versobottom"border=2 style="background-color: green"><center><p class="tourne" align="justify">
-                  	 		 	1-L’étudiant doit prendre soin de sa carte en la conservant dans une pochette plastique non collante et non fermée<br>
-								2-Toute perte de carte entrainera une pénalisation de la somme EFATRA ARIVO Ariary (4.000ar)<br>
-								3-Cette carte doit être signée par le médecin de la Médecine Préventive lors de la visite Médicale<br>
-								4-Tout acte administratif et pédagogique ne peut se faire que sur présentation de cette carte<br>
+                  	 		 <td colspan="2" class="versobottom"border=2 style="background-color: green;"><h6><center><p class="tourne" align="justify">
+                1-L’étudiant doit prendre soin de sa carte en la conservant  <br>&nbsp dans une  pochette plastique   non collante et non fermée<br>
+								2-Toute perte de carte entrainera une pénalisation de la somme  <br>&nbspEFATRA ARIVO Ariary (4.000ar)<br>
+								3-Cette carte doit être signée par le médecin de la Médecine <br>&nbsp Préventive lors de la visite Médicale<br>
+								4-Tout acte administratif et pédagogique ne peut se<br>&nbsp  faire que sur présentation de cette carte<br>
 								5-Cette carte doit être présentée aux examens<br>
 								6-Cette carte doit être insérée au dossier de prochaine réinscription<br>
 
 
 
-                  	 		 </p></center></td>
+                  	 		 </p></center></h6></td>
                   		 	 </tr>
 				  		
                   		 <tr>
@@ -3729,15 +3725,7 @@ ul.chat-available-user li a:hover {
                   		  </tr>
                   		   <tr>
                   	 		 <td colspan="3" >&nbsp</td>
-                  		  </tr>
-
-                  		 <tr>
-                  	 	 <td colspan="3" >&nbsp</td>
-                  		  </tr>
-                  		   <tr>
-                  	 		 <td colspan="3" >&nbsp</td>
-                  		  </tr>
-                  		   
+                  		  </tr> 
                   	 		 <td colspan="3" class="verso"border=2><center><p class="tourne">VISITE MEDICALE</p></center></td>
                   		  </tr>
 				  	</table>
